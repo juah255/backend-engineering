@@ -1,98 +1,153 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# NestJS Backend Engineering Practice
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This repository can be used to practice backend engineering with NestJS. The goal is to learn NestJS as a framework while also covering the broader backend topics that matter in real systems.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Topics to Cover
 
-## Description
+### 1. TypeScript for Backend Work
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- Types, interfaces, and enums
+- Generics
+- Async/await
+- Error handling
+- Modules and project structure
 
-## Project setup
+### 2. Node.js Fundamentals
 
-```bash
-$ pnpm install
-```
+- Event loop
+- Streams and buffers
+- File system
+- Process and environment variables
+- Package management and scripts
 
-## Compile and run the project
+### 3. NestJS Fundamentals
 
-```bash
-# development
-$ pnpm run start
+- Modules
+- Controllers
+- Providers
+- Dependency injection
+- Middleware
+- Pipes
+- Guards
+- Interceptors
+- Exception filters
+- Custom decorators
 
-# watch mode
-$ pnpm run start:dev
+### 4. API Design
 
-# production mode
-$ pnpm run start:prod
-```
+- REST conventions
+- Route design
+- DTOs
+- Request validation
+- Pagination
+- Filtering
+- Sorting
+- API versioning
 
-## Run tests
+### 5. Databases
 
-```bash
-# unit tests
-$ pnpm run test
+- PostgreSQL basics
+- Schema design
+- Relationships
+- Indexes
+- Joins
+- Transactions
+- Migrations
+- ORM practice with Prisma or TypeORM
 
-# e2e tests
-$ pnpm run test:e2e
+### 6. Authentication and Authorization
 
-# test coverage
-$ pnpm run test:cov
-```
+- Sessions vs JWT
+- Passport in NestJS
+- Password hashing
+- Access tokens and refresh tokens
+- Role-based access control
+- Permission-based access control
 
-## Deployment
+### 7. Testing
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+- Unit tests
+- Integration tests
+- End-to-end tests
+- Mocking dependencies
+- Test database setup
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+### 8. Error Handling and Reliability
 
-```bash
-$ pnpm install -g @nestjs/mau
-$ mau deploy
-```
+- Structured error responses
+- Logging
+- Retries
+- Timeouts
+- Idempotency
+- Rate limiting
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+### 9. Caching and Performance
 
-## Resources
+- Redis
+- Caching strategies
+- Query optimization
+- Connection pooling
+- Profiling bottlenecks
 
-Check out a few resources that may come in handy when working with NestJS:
+### 10. Messaging and Background Jobs
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+- Queues with BullMQ
+- Cron jobs
+- Event-driven patterns
+- RabbitMQ or Kafka basics
 
-## Support
+### 11. Security
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+- Input validation
+- SQL injection
+- XSS and CSRF concepts
+- CORS
+- Helmet
+- Secrets management
+- API abuse protection
 
-## Stay in touch
+### 12. Observability
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Centralized logging
+- Metrics
+- Tracing basics
+- Health checks
+- Monitoring with Prometheus and Grafana
 
-## License
+### 13. Deployment and DevOps Basics
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+- Docker
+- Environment configuration
+- CI/CD
+- Running NestJS in production
+- Reverse proxy basics
+- Cloud deployment basics
+
+### 14. Architecture and Scaling
+
+- Layered architecture
+- Modular monolith
+- Microservices in NestJS
+- Domain boundaries
+- Clean architecture tradeoffs
+
+## Suggested Project Sequence
+
+1. CRUD API with authentication and PostgreSQL
+2. E-commerce or booking API with roles, Redis, and pagination
+3. Background job system with queues and email processing
+4. Modular monolith with tests and Docker
+5. Small microservice system with API gateway and message broker
+
+## Recommended Study Order
+
+1. TypeScript
+2. Node.js fundamentals
+3. NestJS fundamentals
+4. API design and validation
+5. PostgreSQL and ORM
+6. Authentication and authorization
+7. Testing
+8. Caching and background jobs
+9. Security and observability
+10. Deployment and architecture
